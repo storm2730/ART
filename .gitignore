@@ -5,6 +5,7 @@ minecraft/
 # Build output
 backend/dist/
 frontend/dist/
+frontend/.tmp/
 
 # Environment
 backend/.env
