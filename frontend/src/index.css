@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --card: 14 12% 6%;
+    --card-border: 25 20% 20%;
+    --foreground: 0 0% 95%;
+    --muted: 0 0% 70%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --card: 14 12% 6%;
+    --card-border: 25 20% 20%;
+    --foreground: 0 0% 95%;
+    --muted: 0 0% 70%;
+  }
+
+  * {
+    @apply border-transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: radial-gradient(ellipse at top, rgba(30, 30, 40, 0.4) 0%, transparent 50%), #000;
+  }
+}
