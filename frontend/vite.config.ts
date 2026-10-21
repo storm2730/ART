@@ -9,12 +9,6 @@ export default defineConfig({
       "@": path.resolve(import.meta.dirname, "src"),
     },
   },
-  css: {
-    devTarget: "dev",
-    lightningcss: {
-      minify: false,
-    },
-  },
   build: {
     cssCodeSplit: true,
   },
